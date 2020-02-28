@@ -62,13 +62,27 @@ public:
     }
 
 
+ //   family(person member,int number_of_children){
+  //  setnumber_of_children(a);
+   // setPerson(b)
+   // }
+
+
     family(person member,int number_of_children){
-    setnumber_of_children(number_of_children);
-    setperson
+        setNumChildren(number_of_children);
+        setPerson(member);
+        setkindergeld(0);
+    }
+
+    void setPerson(person d){
+        member = d;
+    }
+    person getPerson(){
+        return member;
     }
 
 
-    void setnumber_of_children(int a){
+    void setNumChildren(int a){
         number_of_children = a;
     }
     int getnumber_of_children(){
@@ -105,7 +119,6 @@ public:
     return kindergeld;
     }
 
-     //int getkindergeld();
 
      void printfam(){
         cout << "Number of Child : " << number_of_children << endl;
@@ -138,7 +151,7 @@ int main()
 
 // #Person father(“Name”, “Surname”,45);
 
-family A, B(father,2);
+family (father,2);
 
 // #cout<<"Print family information :"<<endl;
 
